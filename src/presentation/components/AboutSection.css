@@ -1,0 +1,77 @@
+.about-section {
+  padding: 3.5rem 2rem 2.5rem 2rem;
+  background: linear-gradient(120deg, #7f5fff 0%, #232526 100%);
+  border-radius: 40px;
+  margin: 2.5rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 24px 0 #7f5fff33;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 12px #00c6ff, 0 0 24px #7f5fff;
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+}
+
+.about-content {
+  color: #e0e0e0;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 650px;
+  background: #232526cc;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px #7f5fff22;
+  padding: 2rem 2.2rem;
+}
+
+.about-list {
+  margin: 1.2rem 0 1.2rem 1.5rem;
+  padding: 0;
+  color: #fff;
+  font-size: 1.08rem;
+  list-style: disc inside;
+}
+
+.about-highlight {
+  color: #7f5fff;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00c6ff99;
+}
+
+/* Not: Ekip üyelerinin isim linklerini daha açık ve belirgin yaptım */
+.about-list a {
+  color: #b3e0ff; /* açık mavi tonu */
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 0 0 8px #7f5fff99;
+  transition: color 0.2s;
+}
+.about-list a:hover {
+  color: #fff;
+  text-shadow: 0 0 12px #00c6ff, 0 0 24px #7f5fff;
+}
+
+/* Not: Vizyon ve hedefler bölümü için hafif vurgu ve başlık stili ekledim */
+.about-vision {
+  margin-top: 2.5rem;
+  background: #7f5fff22;
+  border-radius: 18px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 8px #7f5fff22;
+}
+.about-vision h3 {
+  color: #7f5fff;
+  margin-bottom: 0.7rem;
+  font-size: 1.25rem;
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+}
+.about-vision p {
+  color: #e0e0e0;
+  font-size: 1.08rem;
+  margin: 0;
+} 

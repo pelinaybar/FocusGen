@@ -1,0 +1,66 @@
+.focus-demo {
+  position: relative;
+  background: var(--panel);
+  border-radius: 24px;
+  box-shadow: 0 2px 12px #7f5fff22;
+  padding: 2rem 1.5rem 2.5rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 400px;
+  min-height: 260px;
+  text-align: center;
+  color: var(--text);
+}
+
+.focus-demo-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.focus-demo-start {
+  font-size: 1.1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #7f5fff 0%, #00c6ff 100%);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px #7f5fff33;
+}
+
+.focus-demo-btn {
+  position: absolute;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  border: none;
+  background: linear-gradient(90deg, #00c6ff 0%, #7f5fff 100%);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #00c6ff33;
+  z-index: 10;
+  transition: box-shadow 0.2s;
+}
+
+.focus-demo-btn:active {
+  box-shadow: 0 0 0 #00c6ff00;
+}
+
+.focus-demo-result {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.focus-demo-score {
+  font-size: 1.3rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.focus-demo-comment {
+  margin-bottom: 1rem;
+  color: #fff;
+} 

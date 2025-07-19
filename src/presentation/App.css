@@ -1,0 +1,52 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.splash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #000;
+  animation: fadeIn 1.5s;
+}
+
+.splash-text {
+  font-size: 2.8rem;
+  text-shadow: 0 0 20px #7f5fff, 0 0 40px #00c6ff;
+  letter-spacing: 2px;
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #7f5fff, 0 0 20px #00c6ff;
+  }
+  to {
+    text-shadow: 0 0 30px #7f5fff, 0 0 60px #00c6ff;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #232526;
+}
+::-webkit-scrollbar-thumb {
+  background: #7f5fff;
+  border-radius: 8px;
+} 

@@ -1,0 +1,188 @@
+/* Not: Sidebar ve hamburger menü stilleri */
+.sidebar-hamburger {
+  position: fixed;
+  top: 18px; /* daha yukarı aldım */
+  left: 12px; /* daha sola aldım */
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.sidebar-hamburger span {
+  width: 32px;
+  height: 4px;
+  background: #7f5fff;
+  border-radius: 2px;
+  display: block;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 420px; /* Not: Daha geniş hamburger menü */
+  height: 100vh;
+  background: linear-gradient(120deg, #232526 0%, #7f5fff 100%);
+  box-shadow: 2px 0 24px #7f5fff33;
+  z-index: 400;
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+  display: flex;
+  flex-direction: column;
+}
+.sidebar.open {
+  transform: translateX(0);
+}
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem 1rem 1.5rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-bottom: 1px solid #7f5fff55;
+}
+.sidebar-header button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.sidebar-menu {
+  list-style: none;
+  padding: 0.5rem 0 0.5rem 0;
+  margin: 0;
+}
+.sidebar-menu li {
+  padding: 0.9rem 2rem;
+  color: #fff;
+  font-size: 1.08rem;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+.sidebar-menu li.active, .sidebar-menu li:hover {
+  background: #7f5fff33;
+  border-left: 4px solid #00c6ff;
+}
+.sidebar-content {
+  flex: 1;
+  padding: 1.2rem 2rem;
+  color: #e0e0e0;
+  font-size: 1.08rem;
+  overflow-y: auto;
+}
+.sidebar-content ul {
+  padding-left: 1.2rem;
+}
+.sidebar-content li {
+  margin-bottom: 0.7rem;
+}
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #23252699;
+  z-index: 350;
+}
+
+/* Not: Sohbet arayüzü stilleri */
+.coach-chat {
+  /* Not: Daha büyük sohbet kutusu */
+  background: linear-gradient(120deg, #232526 0%, #7f5fff 100%);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #7f5fff33;
+  padding: 1.2rem 1.5rem;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.msg-user {
+  align-self: flex-end;
+  background: linear-gradient(90deg, #7f5fff 60%, #00c6ff 100%);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 16px 16px 4px 16px;
+  max-width: 70%;
+  font-size: 1rem;
+  box-shadow: 0 1px 8px #7f5fff22;
+  margin-left: 30%; /* Not: Soru balonunu sağa yasla */
+}
+
+.msg-bot {
+  align-self: flex-start;
+  background: linear-gradient(90deg, #00c6ff 0%, #7f5fff 80%);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 16px 16px 16px 4px;
+  max-width: 70%;
+  font-size: 1rem;
+  box-shadow: 0 1px 8px #00c6ff22;
+  margin-right: 30%; /* Not: Cevap balonunu sola yasla */
+}
+
+.chat-questions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.chat-q-btn {
+  background: linear-gradient(90deg, #232526 0%, #7f5fff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.98rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 1px 6px #7f5fff22;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.chat-q-btn:hover {
+  background: linear-gradient(90deg, #7f5fff 0%, #00c6ff 100%);
+  box-shadow: 0 2px 12px #00c6ff33;
+}
+.chat-input-row {
+  display: flex;
+  gap: 0.5rem;
+}
+.chat-input-row input {
+  flex: 1;
+  border-radius: 8px;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.chat-input-row button {
+  background: linear-gradient(90deg, #7f5fff 0%, #00c6ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Not: Sidebar açıkken body'nin overflow'unu etkileme, site içeriği kaydırılabilir kalsın */
+body, html {
+  overflow-x: auto !important;
+} 
