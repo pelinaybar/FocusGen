@@ -1,3 +1,5 @@
+**Sprintlerimize ait veriler, sprintler.md dosyasında yer almaktadır.**
+
 # 🎯 FocusGen - Odak Takip Sistemi
 
 FocusGen, öğrencilerin ders sırasındaki odak seviyelerini gerçek zamanlı olarak takip eden ve öğretmenlere detaylı raporlar sunan modern bir web uygulamasıdır.
