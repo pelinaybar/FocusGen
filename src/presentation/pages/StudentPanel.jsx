@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import * as faceapi from 'face-api.js';
 
 const MODEL_URL = '/models';
-const API_URL = 'http://localhost:8001';
+const API_URL = 'http://localhost:8000';
 
 const StudentPanel = () => {
   const videoRef = useRef(null);

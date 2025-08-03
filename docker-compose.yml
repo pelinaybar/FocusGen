@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # PostgreSQL veritabanı
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: focusgen
+      POSTGRES_USER: focusgen_user
+      POSTGRES_PASSWORD: focusgen123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - focusgen-network
+
+  # Backend API
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://focusgen_user:focusgen123@postgres:5432/focusgen
+    depends_on:
+      - postgres
+    networks:
+      - focusgen-network
+    volumes:
+      - ./backend:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Frontend
+  frontend:
+    build: .
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - focusgen-network
+    environment:
+      - VITE_API_URL=http://localhost:8000
+
+volumes:
+  postgres_data:
+
+networks:
+  focusgen-network:
+    driver: bridge 

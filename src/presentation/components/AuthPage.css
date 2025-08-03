@@ -1,0 +1,42 @@
+.auth-input {
+  flex: 1;
+  padding: 0.7rem 0.5rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  height: 38px;
+  font-weight: 500;
+  letter-spacing: 0.2;
+}
+
+.auth-input::placeholder {
+  color: #b3b3b3;
+  opacity: 1;
+}
+
+.auth-input::-webkit-input-decoration {
+  display: none;
+}
+
+.auth-input::-webkit-contacts-auto-fill-button {
+  display: none;
+}
+
+.auth-input::-webkit-credentials-auto-fill-button {
+  display: none;
+}
+
+.auth-input::-webkit-input-placeholder {
+  color: #b3b3b3;
+  opacity: 1;
+}
+
+.auth-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #232526 inset;
+  -webkit-text-fill-color: #fff;
+  border: none;
+  outline: none;
+} 

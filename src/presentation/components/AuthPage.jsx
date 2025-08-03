@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './AuthPage.css';
 
-const API_URL = 'http://localhost:8001';
+const API_URL = 'http://localhost:8000';
 
 const AuthPage = () => {
   const [tab, setTab] = useState('login');
@@ -112,11 +113,11 @@ const AuthPage = () => {
           <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
             <div style={inputGroupStyle}>
               <span style={iconStyle}>📧</span>
-              <input type="email" placeholder="E-posta" value={loginEmail} onChange={e => setLoginEmail(e.target.value)} style={inputStyle} />
+              <input type="email" placeholder="E-posta" value={loginEmail} onChange={e => setLoginEmail(e.target.value)} style={inputStyle} className="auth-input" />
             </div>
             <div style={inputGroupStyle}>
               <span style={iconStyle}>🔒</span>
-              <input type="password" placeholder="Şifre" value={loginPassword} onChange={e => setLoginPassword(e.target.value)} style={inputStyle} />
+              <input type="password" placeholder="Şifre" value={loginPassword} onChange={e => setLoginPassword(e.target.value)} style={inputStyle} className="auth-input" />
             </div>
             {loginError && <div style={{ color: '#ff6b6b', marginBottom: 8 }}>{loginError}</div>}
             <button type="submit" style={btnStyle}>Giriş Yap</button>
@@ -125,15 +126,15 @@ const AuthPage = () => {
           <form onSubmit={handleRegister} style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
             <div style={inputGroupStyle}>
               <span style={iconStyle}>👤</span>
-              <input type="text" placeholder="Ad Soyad" value={regName} onChange={e => setRegName(e.target.value)} style={inputStyle} />
+              <input type="text" placeholder="Ad Soyad" value={regName} onChange={e => setRegName(e.target.value)} style={inputStyle} className="auth-input" />
             </div>
             <div style={inputGroupStyle}>
               <span style={iconStyle}>📧</span>
-              <input type="email" placeholder="E-posta" value={regEmail} onChange={e => setRegEmail(e.target.value)} style={inputStyle} />
+              <input type="email" placeholder="E-posta" value={regEmail} onChange={e => setRegEmail(e.target.value)} style={inputStyle} className="auth-input" />
             </div>
             <div style={inputGroupStyle}>
               <span style={iconStyle}>🔒</span>
-              <input type="password" placeholder="Şifre" value={regPassword} onChange={e => setRegPassword(e.target.value)} style={inputStyle} />
+              <input type="password" placeholder="Şifre" value={regPassword} onChange={e => setRegPassword(e.target.value)} style={inputStyle} className="auth-input" />
             </div>
             <div style={{ display: 'flex', gap: 16, margin: '8px 0', justifyContent: 'center' }}>
               <label style={{ color: '#e0e0e0', fontWeight: 500 }}>
@@ -218,22 +219,7 @@ const inputStyle = {
   outline: 'none',
   height: 38,
   fontWeight: 500,
-  letterSpacing: 0.2,
-  '::placeholder': {
-    color: '#b3b3b3',
-    opacity: 1
-  },
-  // Tarayıcı otomatik ikonlarını gizle
-  '::-webkit-input-decoration': { display: 'none' },
-  '::-webkit-contacts-auto-fill-button': { display: 'none' },
-  '::-webkit-credentials-auto-fill-button': { display: 'none' },
-  '::-webkit-input-placeholder': { color: '#b3b3b3', opacity: 1 },
-  ':-webkit-autofill': {
-    WebkitBoxShadow: '0 0 0 1000px #232526 inset',
-    WebkitTextFillColor: '#fff',
-    border: 'none',
-    outline: 'none',
-  }
+  letterSpacing: 0.2
 };
 const btnStyle = {
   background: 'linear-gradient(90deg, #7f5fff 0%, #00c6ff 100%)',

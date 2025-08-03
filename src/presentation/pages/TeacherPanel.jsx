@@ -1,7 +1,7 @@
 // Not: Öğretmen paneli. Sınıf listesi, istatistik, özet ve duyuru alanı ekledim.
 import React, { useState, useEffect } from 'react';
 
-const API_URL = 'http://localhost:8001';
+const API_URL = 'http://localhost:8000';
 
 const TeacherPanel = () => {
   const [announcement, setAnnouncement] = useState('');
