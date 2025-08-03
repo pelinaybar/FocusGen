@@ -2,6 +2,9 @@
 
 FocusGen, öğrencilerin ders sırasındaki odak seviyelerini gerçek zamanlı olarak takip eden ve öğretmenlere detaylı raporlar sunan modern bir web uygulamasıdır.
 
+Neden “FocusGen”?
+Proje ekibimizde farklı yaş gruplarından üyeler yer aldığı için, jenerasyonlar arası iş birliğini ve teknolojiye ortak katkıyı temsil etmek amacıyla “FocusGen” (Focus + Generation) ismi tercih edilmiştir. Bu isim, farklı kuşaklardan gelen bireylerin birlikte üreterek ortaya koyduğu güçlü bir vizyonu temsil eder.
+
 ## 🚀 Özellikler
 
 - **Gerçek Zamanlı Odak Takibi**: Face-api.js ile yüz analizi
@@ -243,10 +246,13 @@ docker run -p 80:80 focusgen-frontend
 
 Bu proje MIT lisansı altında lisanslanmıştır.
 
-## 📞 İletişim
+👥 Takım Elemanları
 
-- **Proje Linki**: [GitHub Repository]
-- **E-posta**: [your-email@example.com]
+-Fethiye Helvacılar – Product Owner
+-Andaç Semercioğlu – Scrum Master
+-Pelin Aybar – Backend Developer
+-Aslı Sude Tetik – Frontend Developer
+-Betül Alpaslan – Developer
 
 ---
 
