@@ -52,9 +52,6 @@ Görevlerin öncelik ve tipi aşağıdaki gibidir:
 ### Daily Scrum:
 Daily Scrum toplantılarımız Google Meets üzerinden her akşam saat 20:00’de yapılmıştır. Toplantı notları ve günlük gelişmeler Whatsapp grubunda kayıt altına alınmıştır.
 
-![WhatsApp Image 2025-07-07 at 16 54 01](https://github.com/user-attachments/assets/26fe5a00-c3a6-478d-a7ac-e06eb5af57cd)
-![WhatsApp Image 2025-07-07 at 16 54 02](https://github.com/user-attachments/assets/bed19097-892f-4229-bae9-25efddf80a93)
-
 ### Sprint board update: Sprint board screenshot: <img width="918" alt="Ekran Resmi 2025-07-06 22 06 19" src="https://github.com/user-attachments/assets/20acd919-c3aa-4f34-8015-696a7dc3a230" />
 
 ### Ürün Durumu: React.js arayüz klasör dosyamızı oluşturduk.
@@ -94,7 +91,7 @@ Proje boyunca tamamlanması gereken toplam 300 puanlık backlog bulunmaktadır. 
 İkinci sprintte, arayüz geliştirme, hata yönetimi ve sistem entegrasyonları gibi teknik ilerlemeye odaklanılmış ve buna göre 100 puanlık görev dağılımı yapılmıştır.
 
 ### Backlog düzeni ve Story seçimleri:
-Sprint 1, sonraki sprintlerin temelini oluşturacak şekilde planlanmıştır. Aşağıdaki görevler Notion’daki sprint board’da "Backlog", "To-do", "In Progress", "In Review" başlıklarına dağıtılmıştır.
+Sprint 2, sonraki sprintlerin temelini oluşturacak şekilde planlanmıştır. Aşağıdaki görevler Notion’daki sprint board’da "Backlog", "To-do", "In Progress", "In Review" başlıklarına dağıtılmıştır.
 Görevlerin öncelik ve tipi aşağıdaki gibidir:
 - Low Priority görevler proje kurulumunu ve belgelemeyi içerir.
 - Minimal Priority görevler teknik ön araştırma ve ilk entegrasyonları içerir.
@@ -134,3 +131,59 @@ API ve veri tabanı entegrasyonu için planlama yapılmıştır.
 - Tüm ekip görevlerine zamanında başladı ve iletişim düzenli sağlandı.
 
 
+# Sprint 3
+
+### Sprint Notları
+User Story:Bu sprint, projenin tamamlanma sprinti olarak planlanmıştır. MediaPipe landmark entegrasyonu tamamlanmış, backend eksikleri giderilmiş, API, veri tabanı ve authentication entegrasyonları başarıyla uygulanmıştır. Ayrıca, arayüzde erişilebilirlik odaklı son iyileştirmeler yapılmış, test süreçleri tamamlanmış ve proje teslim edilebilir hale getirilmiştir.
+
+Sprint Hedefi:Tüm backend ve frontend entegrasyonlarının tamamlanması, MediaPipe modülünün çalışır hale getirilmesi, arayüz iyileştirmelerinin sonlandırılması ve projenin hatasız olarak teslim edilmesi.
+
+Sprint Süresi: 21 Temmuz – 3 Ağustos 2025
+Toplam Puan: 100 Puan
+
+### Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
+
+### Puan tamamlama mantığı:
+Proje boyunca tamamlanması gereken toplam 300 puanlık backlog, üç sprint’e bölünmüştür. Üçüncü sprintte backend eksiklerinin giderilmesi, modüllerin entegrasyonu ve proje bitirme görevlerine odaklanılmıştır. Bu kapsamda 100 puanlık görev tamamlanarak proje başarıyla sonlandırılmıştır.
+
+### Backlog düzeni ve Story seçimleri:
+Sprint 3 görevleri, Notion’daki sprint board üzerinde "Backlog", "To-do", "In Progress", "In Review" başlıkları altında planlanmış ve sprint sonunda tümü tamamlanmıştır. Görevlerin öncelik ve tip dağılımı şu şekildedir:
+Low Priority görevler: Araştırma, kaynak dokümantasyonu ve yapılandırma
+Minimal Priority görevler: Teknik entegrasyonlar, testler, modül geliştirme
+Görev türleri: Feature, Task, Chore, Research
+
+### Daily Scrum:
+Daily Scrum toplantılarımız Google Meets üzerinden her akşam saat 21:00’de yapılmıştır. Toplantı notları ve günlük gelişmeler WhatsApp grubunda kayıt altına alınmıştır.
+
+<img width="1480" height="822" alt="Ekran Resmi 2025-08-03 15 25 43" src="https://github.com/user-attachments/assets/76cba55a-804b-47a4-b77e-9d80c6ce279e" />
+
+### Sprint board update: Sprint board screenshot: <img width="817" height="893" alt="Ekran Resmi 2025-08-03 19 23 57" src="https://github.com/user-attachments/assets/b3ca59d5-2969-4732-a341-6bd200dfb979" />
+
+### Ürün Durumu: 
+API, veri tabanı ve authentication entegrasyonları başarıyla tamamlandı.
+MediaPipe landmark entegrasyonu yapıldı ve sorunsuz çalışıyor.
+Proje klasör yapısı son haline getirildi.
+Erişilebilirlik odaklı arayüz iyileştirmeleri uygulandı.
+Tüm modüller test edildi ve hatasız şekilde çalışıyor.
+Proje teslim edilebilir final sürümüne ulaştı.
+
+![WhatsApp Image 2025-08-03 at 15 43 06](https://github.com/user-attachments/assets/e1dceaa6-aa74-40f7-86fc-08fcc2fdcd82)
+![WhatsApp Image 2025-08-03 at 15 43 06-2](https://github.com/user-attachments/assets/74317025-851d-4227-9c20-0cba96fbfce5)
+![WhatsApp Image 2025-08-03 at 15 43 06-3](https://github.com/user-attachments/assets/425e8090-563a-4b11-ab48-64e60c7f25fa)
+![WhatsApp Image 2025-08-03 at 15 43 07](https://github.com/user-attachments/assets/d01eb894-286e-4bb9-8a2f-ea2316cb99c6)
+![WhatsApp Image 2025-08-03 at 15 43 07-2](https://github.com/user-attachments/assets/2f33af37-15f9-49e0-a512-dbdbb2b337f7)
+
+
+### Sprint Review:
+- Backend eksikleri tamamlandı, API ve veri tabanı bağlantıları sorunsuz çalışıyor.
+- MediaPipe modülü tam entegrasyon ile devreye alındı.
+- Arayüz ve erişilebilirlik geliştirmeleri kullanıcı deneyimini güçlendirdi.
+- Tüm sprint hedefleri başarıyla tamamlandı.
+- Sprint Review Katılımcıları:
+  Andaç Semercioğlu, Aslı Sude Tetik, Fethiye Helvacılar, Pelin Aybar, Betül Alparslan
+
+### Sprint Retrospective:
+- Sprint planlaması verimli yapıldı, tüm görevler zamanında tamamlandı.
+- Ekip içi iletişim ve görev dağılımı etkili şekilde sürdürüldü.
+- Proje zamanında ve eksiksiz teslim edildi.
+- Kullanıcı deneyimi ve teknik altyapı açısından hedeflerin ötesine geçildi.
