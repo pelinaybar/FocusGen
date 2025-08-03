@@ -248,13 +248,13 @@ Bu proje MIT lisansı altında lisanslanmıştır.
 
 ## 👥 Ekibimiz
 
-| İsim                | Rol            |
-|---------------------|----------------|
-| Fethiye Helvacılar  | Product Owner  |
-| Andaç Semercioğlu   | Scrum Master   |
-| Pelin Aybar         | Developer      |
-| Aslı Sude Tetik     | Developer      |
-| Betül Alpaslan      | Developer      |
+| İsim                | Rol                    |
+|---------------------|------------------------|
+| Fethiye Helvacılar  | Product Owner          |
+| Andaç Semercioğlu   | Scrum Master           |
+| Pelin Aybar         | Backend Developer      |
+| Aslı Sude Tetik     | Frontend Developer     |
+| Betül Alpaslan      | Developer              |
 
 
 ---
